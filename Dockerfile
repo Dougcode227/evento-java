@@ -5,8 +5,6 @@ RUN apt-get install openjdk-17-jdk -y
 
 COPY . .
 
-COPY mvn-entrypoint.sh /usr/local/bin/mvn-entrypoint.sh
-
 RUN apt-get install maven -y
 RUN mvn clean install
 
